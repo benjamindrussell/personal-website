@@ -1,0 +1,20 @@
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    padding: 3rem 3rem;
+    font-size: 3rem;
+    color: var(--mint);
+    text-align: center;
+    background: var(--purple);
+    user-select: none;
+}
+
+@media only screen and (max-width: 750px) {
+    h1 {
+        font-size: calc(1rem + 5vw);
+    }
+}

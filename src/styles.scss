@@ -1,1 +1,115 @@
-/* You can add global styles to this file, and also import other style files */
+@import "primeng/resources/themes/bootstrap4-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    background-color: #f1e9da;
+    color: #f1e9da;
+}
+
+:root {
+    --purple: #2e294e;
+    --pink: #d90368;
+    --mint: #06ffb3;
+    --white: #f1e9da;
+}
+
+.about {
+    margin-top: 110px;
+}
+
+.text {
+    color: #f1e9da;
+    // margin: 2rem 3rem 2rem 1rem;
+    font-size: 1.25rem;
+    margin-left: 30px;
+    // width: 35vw;
+}
+
+img {
+    width: 600px;
+    height: 450px;
+    border-radius: 20px;
+    // margin: 2rem 1rem 2rem 3rem;
+}
+
+.content {
+    border-radius: 20px;
+    padding: 30px;
+    background-color: #2e294e;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    margin: 0rem 3rem;
+}
+
+hr {
+    border: 1px solid #d90368; /* Solid black line */
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+@keyframes wave1 {
+    0%, 100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+
+    50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 50% 60%;
+    }
+}
+
+@keyframes wave2 {
+    0%, 100% {
+        border-radius: 30% 70% 70% 30% / 30% 46% 54% 70%;
+    }
+
+    50% {
+        border-radius: 74% 26% 43% 57% / 58% 59% 41% 42% ;
+    }
+}
+
+@keyframes wave3 { 
+    0%, 100% {
+        border-radius: 38% 62% 27% 73% / 65% 38% 62% 35% ;
+    }
+
+    50% {
+        border-radius: 68% 32% 67% 33% / 65% 71% 29% 35%;
+    }   
+}
+
+@media only screen and (max-width: 750px) {
+    .content {
+        margin: 1rem;
+        padding: 20px;
+    }
+
+    img {
+        width: 80vw;
+        height: 60vw;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .content {
+        grid-template-columns: 1fr;
+    }
+
+    .text {
+        margin: 0;
+    }
+}

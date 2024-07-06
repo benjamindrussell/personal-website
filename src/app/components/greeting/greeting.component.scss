@@ -1,0 +1,63 @@
+.greeting {
+    min-height: 85vh;
+    background-color: var(--purple);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.name {
+    font-size: 8rem;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: var(--mint);
+    font-size: 4rem;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    font-family: "JetBrains Mono";
+}
+
+.cursor {
+    animation: blink 1s step-start 0s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0.0;
+    }
+}
+
+img {
+    width: 350px;
+    height: 350px;
+    border-radius: 31% 69% 26% 74% / 69% 32% 68% 31%;
+}
+
+@media only screen and (max-width: 1200px) {
+    .greeting {
+        flex-direction: column;
+    }
+
+    .text {
+        margin-top: 10vh;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .text {
+        margin-top: 10px;
+    }
+
+    .name {
+        font-size: calc(2rem + 12vw);
+    }
+
+    h2 {
+        font-size: calc(1rem + 4vw);
+    }
+}

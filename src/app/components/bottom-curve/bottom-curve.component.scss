@@ -1,0 +1,22 @@
+.bottom-curve-container {
+    position: relative;
+}
+.curve {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.curve svg {
+    position: relative;
+    display: block;
+    width: calc(109% + 1.3px);
+    height: 110px;
+}
+
+.curve .shape-fill {
+    fill: #2E294E;
+}

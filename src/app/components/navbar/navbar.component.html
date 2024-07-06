@@ -1,0 +1,10 @@
+<nav class="navbar">
+    <span class="logo" (click)="scrollToTop()">🏡</span>
+    <ul class="buttons">
+        @for(btn of buttonList; track btn){
+            <li>
+                <p-button [label]="btn.label" (click)="scrollToAnchor(btn.component)"></p-button>
+            </li>
+        }
+    </ul>
+</nav>
