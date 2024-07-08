@@ -1,0 +1,6 @@
+<section class="experience">
+    <app-section-header [title]="'🧑‍🚀 Experience'"></app-section-header>
+    @for(experience of experiences; track experience.name){
+       <app-experience-card [experience]="experience"></app-experience-card> 
+    }
+</section>

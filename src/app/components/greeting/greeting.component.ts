@@ -9,7 +9,6 @@ import { Component } from '@angular/core';
 })
 
 export class GreetingComponent {
-    // sleep for given number of milliseconds
     sleep(ms: number) {
         return new Promise((resolve) => setTimeout(resolve, ms));
     }
@@ -35,7 +34,6 @@ export class GreetingComponent {
     }
 
     ngOnInit() {
-        // init animation
         this.writeLoop();
     }
 }

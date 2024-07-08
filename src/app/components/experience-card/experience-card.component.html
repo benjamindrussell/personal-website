@@ -1,0 +1,16 @@
+<div class="experience-card fade-experience">
+    <div class="left">
+        <a [href]="experience.url" target="_blank">
+            <img class="logo" [src]="experience.logoPath" [alt]="experience.name + ' logo'">
+        </a>
+    </div>
+    <div class="right">
+        <h2 class="name">{{experience.name}}<span class="position"> | {{experience.position}}</span></h2>
+        <h3 class="dates"><span>{{experience.startDate}}</span> - <span>{{experience.endDate}}</span></h3>
+        <ul class="description">
+            @for(description of experience.descriptions; track description){
+                <li>{{description}}</li>
+            }
+        </ul>
+    </div>
+</div>
