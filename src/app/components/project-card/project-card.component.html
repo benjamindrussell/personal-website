@@ -1,0 +1,37 @@
+<div class="project fade-right">
+    <div class="img-container">
+        <img [src]="project.imagePath" [alt]="project.title + ' header image'">
+    </div>
+    <div class="info">
+        <h2 class="title">{{project.title}}</h2>
+        <p class="heading">{{project.heading}}</p>
+        <ul class="descriptions">
+            @for(description of project.descriptions; track description){
+                <li>{{description}}</li>
+            }
+        </ul>
+    </div>
+        <div class="links">
+            @if(project.medium){
+                <app-icon-link 
+                    [href]="project.medium" 
+                    [src]="'../../../assets/medium-logo.png'" 
+                    [alt]="'Medium Logo'">
+                </app-icon-link>
+            }
+            @if(project.devpost){
+                <app-icon-link 
+                    [href]="project.devpost" 
+                    [src]="'../../../assets/devpost-logo.png'" 
+                    [alt]="'Devpost Logo'">
+                </app-icon-link>
+            }
+            @if(project.github){
+                <app-icon-link 
+                    [href]="project.github" 
+                    [src]="'../../../assets/github-logo.png'" 
+                    [alt]="'GitHub Logo'">
+                </app-icon-link>
+            }
+        </div>
+</div>

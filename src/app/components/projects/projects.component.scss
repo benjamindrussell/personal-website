@@ -1,0 +1,21 @@
+.projects {
+    margin-top: 100px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 50px 0px;
+    margin-top: 40px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .cards {
+        gap: 0px
+    }
+}

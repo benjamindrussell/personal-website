@@ -1,0 +1,103 @@
+.contact {
+    min-height: 50vh;
+    background-color: var(--purple);
+}
+
+h1 {
+    margin: 0 1rem;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.contact-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#copy-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 34px 8px;
+    position: relative;
+}
+
+#copy-text.active button:before,
+#copy-text.active button:after {
+    display: block;
+}
+
+input {
+    background: none;
+    border: none;
+    font: inherit;
+    color: black;
+    outline: none;
+    box-shadow: none;
+    width: 275px;
+    font-size: 1.25rem;
+}
+
+button {
+    background-color: var(--pink);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    padding: 6px 4px;
+}
+
+button:active {
+    background-color: var(--mint);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:before {
+    content: "Copied";
+    position: absolute;
+    background: var(--pink);
+    top: -44px;
+    right: -8px;
+    font-size: 1rem;
+    padding: 6px 10px;
+    border-radius: 99px;
+    pointer-events: none;
+    display: none;
+}
+
+button:after {
+    content: "";
+    position: absolute;
+    top: -19.5px;
+    right: 19px;
+    width: 12px;
+    height: 12px;
+    background: var(--pink);
+    transform: rotate(45deg);
+    pointer-events: none;
+    display: none;
+}
+
+.links {
+    display: flex;
+}
+
+app-icon-link {
+    margin: 8px;
+}
+
+@media only screen and (max-width: 750px) {
+    .contact-wrapper {
+        display: grid;
+    }
+
+    #copy-text {
+        margin: 34px 8px 8px 8px;
+    }
+}

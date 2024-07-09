@@ -13,6 +13,7 @@ export interface Project {
     title: string,
     github?: string,
     devpost?: string,
+    medium?: string,
     website?: string,
     heading: string,
     descriptions: string[]

@@ -25,7 +25,7 @@ export class AboutComponent {
             });
         }, observerOptions);
 
-        document.querySelectorAll('.fade-paragraph').forEach(element => {
+        document.querySelectorAll('.fade-left').forEach(element => {
             observer.observe(element);
         });
     }

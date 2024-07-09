@@ -6,11 +6,14 @@ import { GreetingComponent } from './components/greeting/greeting.component';
 import { AboutComponent } from './components/about/about.component';
 import { BottomCurveComponent } from './components/bottom-curve/bottom-curve.component';
 import { ExperienceComponent } from './components/experience/experience.component';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { TopCurveComponent } from './components/top-curve/top-curve.component';
 
 @Component({
     selector: 'app-root',
     standalone: true,
-    imports: [RouterOutlet, NavbarComponent, GreetingComponent, BottomCurveComponent, AboutComponent, ExperienceComponent],
+    imports: [RouterOutlet, NavbarComponent, GreetingComponent, BottomCurveComponent, AboutComponent, ExperienceComponent, ProjectsComponent, ContactComponent, TopCurveComponent],
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss'
 })

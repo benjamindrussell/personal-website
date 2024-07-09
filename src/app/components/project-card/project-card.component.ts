@@ -1,15 +1,17 @@
 import { Component, Input } from '@angular/core';
-import { Experience } from '../../../types';
+import { Project } from '../../../types';
+import { IconLinkComponent } from '../icon-link/icon-link.component';
 
 @Component({
-  selector: 'app-experience-card',
+  selector: 'app-project-card',
   standalone: true,
-  imports: [],
-  templateUrl: './experience-card.component.html',
-  styleUrl: './experience-card.component.scss'
+  imports: [IconLinkComponent],
+  templateUrl: './project-card.component.html',
+  styleUrl: './project-card.component.scss'
 })
-export class ExperienceCardComponent {
-    @Input() experience!: Experience;
+
+export class ProjectCardComponent {
+    @Input() project!: Project;
 
     ngOnInit(){
         const observerOptions = {
@@ -27,7 +29,7 @@ export class ExperienceCardComponent {
             });
         }, observerOptions);
 
-        document.querySelectorAll('.fade-up').forEach(element => {
+        document.querySelectorAll('.fade-right').forEach(element => {
             observer.observe(element);
         });
     }

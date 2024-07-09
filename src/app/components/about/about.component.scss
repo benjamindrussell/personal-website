@@ -1,5 +1,5 @@
 .about {
-    margin: 200px 0px 50px 0px;
+    margin-top: 200px;
 }
 
 .about-content {
@@ -30,13 +30,13 @@ img {
     margin: 2rem 15px;
 }
 
-.fade-paragraph {
+.fade-left {
     opacity: 0;
     transform: translateX(100px);
     transition: 0.75s all;
 }
 
-.fade-paragraph.is-visible {
+.fade-left.is-visible {
     opacity: 1;
     transform: translateX(0);
 }
