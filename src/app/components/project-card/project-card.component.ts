@@ -12,25 +12,4 @@ import { IconLinkComponent } from '../icon-link/icon-link.component';
 
 export class ProjectCardComponent {
     @Input() project!: Project;
-
-    ngOnInit(){
-        const observerOptions = {
-            root: null,
-            rootMargin: "0px",
-            threshold: 0.1
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('is-visible');
-                    observer.unobserve(entry.target); // Ensures the animation only happens once
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.fade-right').forEach(element => {
-            observer.observe(element);
-        });
-    }
 }

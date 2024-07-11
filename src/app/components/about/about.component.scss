@@ -33,12 +33,14 @@ img {
 
 .fade-left {
     opacity: 0;
+    filter: blur(2px);
     transform: translateX(100px);
-    transition: 0.75s all;
+    transition: 1s all;
 }
 
 .fade-left.is-visible {
     opacity: 1;
+    filter: blur(0);
     transform: translateX(0);
 }
 
