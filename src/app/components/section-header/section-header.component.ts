@@ -8,6 +8,9 @@ import { Component, Input } from '@angular/core';
   styleUrl: './section-header.component.scss'
 })
 export class SectionHeaderComponent {
+    @Input() title: string = '';
+    @Input() icon: string = '';
+
     animations = ['wave1', 'wave2', 'wave3'];
 
     randomIndex = 0;
@@ -16,8 +19,6 @@ export class SectionHeaderComponent {
     getRandomAnimation(): string {
       return this.animations[this.randomIndex];
     }
-
-    @Input() title: string = '';
     
     ngOnInit() {
       this.randomIndex = Math.floor(Math.random() * this.animations.length);

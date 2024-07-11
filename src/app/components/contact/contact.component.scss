@@ -9,6 +9,15 @@ h1 {
     font-size: 4rem;
 }
 
+@keyframes gradient{
+    0% {
+        background-position: 200% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 .contact-wrapper {
     display: flex;
     align-items: center;
@@ -24,6 +33,7 @@ h1 {
     border-radius: 10px;
     margin: 34px 8px;
     position: relative;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.5);
 }
 
 #copy-text.active button:before,

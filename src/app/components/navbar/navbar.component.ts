@@ -41,4 +41,10 @@ export class NavbarComponent {
     scrollToTop() {
         window.scrollTo(0, 0);
     }
+
+    ngOnInit() {
+        // Set a fixed offset of 100 pixels from the top
+        this.viewportScroller.setOffset([0, 95]);
+    }
+
 }

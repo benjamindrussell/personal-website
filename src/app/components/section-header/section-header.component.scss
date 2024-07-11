@@ -7,10 +7,15 @@
 h1 {
     padding: 3rem 3rem;
     font-size: 3rem;
+    font-weight: 650;
     color: var(--mint);
     text-align: center;
     background: var(--purple);
     user-select: none;
+}
+
+.title {
+    text-shadow: 0px 0px 8px #69ffd2;
 }
 
 @media only screen and (max-width: 750px) {
