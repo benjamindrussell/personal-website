@@ -17,7 +17,7 @@ export class NavbarComponent {
             "component": "aboutComponent"
         },
         {
-            "label": "🧑‍🚀 Experience",
+            "label": "👨‍🚀 Experience",
             "component": "experienceComponent"
         },
         {

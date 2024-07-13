@@ -18,6 +18,8 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 body {
@@ -25,6 +27,7 @@ body {
     font-size: 1.25rem;
     background-color: var(--white);
     color: var(--white);
+    overflow: hidden;
 }
 
 @keyframes wave1 {
