@@ -20,7 +20,9 @@ export class ExperienceComponent {
             startDate: "May 2024",
             endDate: "August 2024",
             descriptions: [
-                "Built data visualization dashboard on AWS with Python for US Space Force contract involving Space Domain Awareness"
+                "Implemented front-end of a Vue.js app that automates Argo Workflows on Kubernetes for Foreign Material Exploitation to support 7 intelligence agencies including the National Air and Space Intelligence Center",
+                "Engineered AWS Lambda function in Python to monitor and process ~2,500 frames per day of real-time satellite data, delivering analytics to Grafana dashboard for a contract supporting the U.S. Space Force",
+                "Conducted research on open-source geospatial intelligence datasets and object-detection models, compiled and presented findings including existing Jupyter Notebooks and ~67,000 square km of high-resolution imagery to enhance company's geospatial intelligence capabilities"
             ]
         },
         {
@@ -31,8 +33,8 @@ export class ExperienceComponent {
             startDate: "April 2024",
             endDate: "Present",
             descriptions: [
-                "Facilitated the transfer of Flyer Enterprises codebase from Bitbucket to GitHub to reduce expenses",
-                "Developing mobile ordering web app with Angular and Express.js"
+                "Designed UI/UX for Flyer Enterprises’ mobile ordering website using Figma and currently developing the site with Angular, Express.js, and PostgreSQL to boost on-campus dining sales to a potential customer base of over 8,000 students",
+                "Migrated codebase from Bitbucket to GitHub to reduce expenses due to increasing team size"
             ]
         }
     ]
