@@ -13,6 +13,18 @@ import { ExperienceCardComponent } from '../experience-card/experience-card.comp
 export class ExperienceComponent {
     experiences: Experience[] = [
         {
+            name: "Flyer Enterprises",
+            position: "Software Developer",
+            logoPath: "assets/fe-logo.png",
+            url: "https://www.flyerenterprises.com/",
+            startDate: "April 2024",
+            endDate: "Present",
+            descriptions: [
+                "Building Flyer Enterprises’ mobile ordering website with Angular, Express.js, and PostgreSQL to boost on-campus dining sales to a potential customer base of over 8,000 students",
+                "Designed UI/UX of mobile ordering website with Figma to deliver a premium user experience"
+            ]
+        },
+        {
             name: "Riverside Research",
             position: "Software Engineering Intern",
             logoPath: "assets/riverside-logo.jpeg",
@@ -25,17 +37,5 @@ export class ExperienceComponent {
                 "Conducted research on open-source geospatial intelligence datasets and object-detection models, compiled and presented findings including existing Jupyter Notebooks and ~67,000 square km of high-resolution imagery to enhance company's geospatial intelligence capabilities"
             ]
         },
-        {
-            name: "Flyer Enterprises",
-            position: "Software Developer",
-            logoPath: "assets/fe-logo.png",
-            url: "https://www.flyerenterprises.com/",
-            startDate: "April 2024",
-            endDate: "Present",
-            descriptions: [
-                "Designed UI/UX for Flyer Enterprises’ mobile ordering website using Figma and currently developing the site with Angular, Express.js, and PostgreSQL to boost on-campus dining sales to a potential customer base of over 8,000 students",
-                "Migrated codebase from Bitbucket to GitHub to reduce expenses due to increasing team size"
-            ]
-        }
     ]
 }

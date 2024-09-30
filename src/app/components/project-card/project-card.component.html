@@ -12,6 +12,13 @@
         </ul>
     </div>
         <div class="links">
+            @if(project.website){
+                <app-icon-link 
+                    [href]="project.website" 
+                    [src]="'../../../assets/internet-logo.png'" 
+                    [alt]="'Internet Icon'">
+                </app-icon-link>
+            }
             @if(project.medium){
                 <app-icon-link 
                     [href]="project.medium" 

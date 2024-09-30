@@ -10,12 +10,21 @@
     margin-top: 40px;
 }
 
+.center-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+
 @media only screen and (max-width: 1200px) {
     .cards {
         grid-template-columns: 1fr;
+        gap: 0px
     }
 
-    .cards {
-        gap: 0px
+    .center-card {
+      margin-top: 0px;
     }
 }
