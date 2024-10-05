@@ -33,7 +33,7 @@ export class ProjectsComponent {
       heading:
         'A mobile app designed to keep developers consistent in building side projects by associating the health of digital companions to their GitHub activity',
       descriptions: [
-        'HackIllinois 2023 Best Beginner Hack',
+        'HackIllinois 2024 Best Beginner Hack',
         'Best Developer Tool Honorable Mention',
       ],
     },
